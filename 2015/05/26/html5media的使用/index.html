@@ -9,8 +9,7 @@
   <meta name="author" content="wilson">
   
   <meta name="description" content="问题产生
-今天接到一个需求:在所有主流浏览器(包括IE7)中播放mp4视频。根据张先生的一篇文章很快就搞定了。但在上传静态资源的时候遇到一个神奇的现象：本地引用线上的js是正常的，但是拷贝到本地的时候IE7/8就一直出不来了。html5media网上的教程很多，但是这个坑找了很久都没找到。
-解决方法">
+今天接到一个需求:在所有主流浏览器(包括IE7)中播放mp4视频。根据张先生的一篇文章很快就搞定了。但在上传静态资源的时候遇到一个神奇的现象：本地引用线上的js是正常的，但是拷贝到本地的时候IE7/8就一直出不来了。html5media网上的教程很多，但是这个坑找了很久都没找到。">
   
   
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -78,7 +77,7 @@
     <div class="entry">
       
         <h3 id="问题产生">问题产生</h3><hr>
-<p>今天接到一个需求:在所有主流浏览器(包括IE7)中播放mp4视频。根据张先生的一篇<a href="http://www.zhangxinxu.com/wordpress/2010/03/%E8%AE%A9%E6%89%80%E6%9C%89%E6%B5%8F%E8%A7%88%E5%99%A8%E6%94%AF%E6%8C%81html5-video%E8%A7%86%E9%A2%91%E6%A0%87%E7%AD%BE/" target="_blank" rel="external">文章</a>很快就搞定了。但在上传静态资源的时候遇到一个神奇的现象：本地引用<a href="http://api.html5media.info/1.1.8/html5media.min.js" target="_blank" rel="external">线上</a>的js是正常的，但是拷贝到本地的时候IE7/8就一直出不来了。html5media网上的教程很多，但是这个坑找了很久都没找到。</p>
+<p>今天接到一个需求:在所有主流浏览器(包括IE7)中播放mp4视频。根据张先生的一篇<a href="http://www.zhangxinxu.com/wordpress/2010/03/%E8%AE%A9%E6%89%80%E6%9C%89%E6%B5%8F%E8%A7%88%E5%99%A8%E6%94%AF%E6%8C%81html5-video%E8%A7%86%E9%A2%91%E6%A0%87%E7%AD%BE/" target="_blank" rel="external">文章</a>很快就搞定了。但在上传静态资源的时候遇到一个神奇的现象：本地引用<a href="http://api.html5media.info/1.1.8/html5media.min.js" target="_blank" rel="external">线上</a>的js是正常的，但是拷贝到本地的时候IE7/8就一直出不来了。html5media网上的教程很多，但是这个坑找了很久都没找到。 <a id="more"></a></p>
 <h3 id="解决方法">解决方法</h3><hr>
 <p>html5media的做法是当浏览器不支持video标签的时候讲视频转成flash格式来播放。在html5media中找到以下片段：<br><figure class="highlight nix"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">i.<span class="variable">flowplayerSwf=</span>v+<span class="string">"flowplayer.swf"</span>,</span><br><span class="line">i.<span class="variable">flowplayerAudioSwf=</span>v+<span class="string">"flowplayer.audio.swf"</span>,</span><br><span class="line">i.<span class="variable">flowplayerControlsSwf=</span>v+<span class="string">"flowplayer.controls.swf"</span>,</span><br><span class="line">i.<span class="variable">expressInstallSwf=</span>v+<span class="string">"expressInstall.swf"</span>;</span><br></pre></td></tr></table></figure></p>
 <p>所以必须把html5media.js和你需要用到的播放器放在<strong>同一个</strong>目录下面，如下图<br><img src="/img/html5media.png" alt="目录结构"><br>至此，问题已经解决。其实一早就该想到这个原因了，日了狗了。而偏偏在IE下面找不到这个文件也不会报错，然后1个小时就这样没了。<br>如果你对样式有要求可以使用<a href="http://www.videojs.com/" target="_blank" rel="external">vedio.js</a>,这也是个非常好的插件。</p>
