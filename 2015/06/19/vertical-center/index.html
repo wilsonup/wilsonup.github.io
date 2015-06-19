@@ -14,15 +14,17 @@ var _hmt = _hmt || [];
 })();
 </script>
   
-  <title>图片或视频转代码的工具 | wilson&#39;s blog</title>
+  <title>不定高元素实现垂直居中 | wilson&#39;s blog</title>
   <meta name="author" content="wilson">
   
-  <meta name="description" content="之前组里要画YY熊，有个同事用canvas将图片直接转换成代码，有兴趣的点击这里围观。很明显，这个是靠CPU跑起来的，而不是显卡，所以上传图片的时候请谨慎，图片太大会让你的机子死翘翘。趁此机会又收集了几款类似的工具。本文就拿YY熊来做demo：">
+  <meta name="description" content="有时候我们会遇到图片垂直居中的情况，更准确来说应该是在一个元素内适配图片。而且这种垂直居中图片的高度也是不确定的，这就给页面布局带来了一定的挑战。
+整体效果
+首先，让我们先来看一下整体的效果：">
   
   
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-  <meta property="og:title" content="图片或视频转代码的工具"/>
+  <meta property="og:title" content="不定高元素实现垂直居中"/>
   <meta property="og:site_name" content="wilson&#39;s blog"/>
 
   
@@ -74,23 +76,28 @@ var _hmt = _hmt || [];
     <header>
       
         <div class="icon"></div>
-        <time datetime="2015-06-01T10:08:19.000Z"><a href="/2015/06/01/to-code/">2015-06-01</a></time>
+        <time datetime="2015-06-19T08:10:16.000Z"><a href="/2015/06/19/vertical-center/">2015-06-19</a></time>
       
       
   
-    <h1 class="title">图片或视频转代码的工具</h1>
+    <h1 class="title">不定高元素实现垂直居中</h1>
   
 
     </header>
     <div class="entry">
       
-        <p>之前组里要画YY熊，有个同事用canvas将图片直接转换成代码，有兴趣的<a href="http://codepen.io/blazeeboy/pen/bCaLE" target="_blank" rel="external">点击这里</a>围观。很明显，这个是靠CPU跑起来的，而不是显卡，所以上传图片的时候请谨慎，图片太大会让你的机子死翘翘。趁此机会又收集了几款类似的工具。<br>本文就拿YY熊来做demo：<br><img src="/img/toCode/yy.jpg" alt="YY熊"><br><a id="more"></a></p>
-<h3 id="1-图片转0_1">1.图片转0 1</h3><p>转换后效果如下，有兴趣的<a href="http://www.text-image.com/convert/" target="_blank" rel="external">点击这里</a><br><img src="/img/toCode/1.jpg" alt="YY熊效果图"></p>
-<h3 id="2-文字转字符">2.文字转字符</h3><p>输入：wilsonup<br>转换后效果如下，有兴趣的<a href="http://patorjk.com/software/taag/#p=display&amp;f=Soft&amp;t=wilsonup" target="_blank" rel="external">点击这里</a><br><img src="/img/toCode/2.png" alt="输出"></p>
-<h3 id="3-图片转字符">3.图片转字符</h3><p>转换后效果如下，有兴趣的<a href="http://picascii.com/" target="_blank" rel="external">点击这里</a><br><img src="/img/toCode/3.png" alt="YY熊效果图"></p>
-<h3 id="4-视屏转字符">4.视屏转字符</h3><p>视频这里就不做demo，有兴趣点击<a href="http://cssha.com/img2txt/video2txt.html" target="_blank" rel="external">这里</a>自行修炼。</p>
-<h3 id="文章推荐">文章推荐</h3><hr>
-<p><a href="http://cssha.com/img2txt-canvas/" target="_blank" rel="external">基于canvas将图片转化成字符画</a><br><a href="http://cssha.com/img2txt/" target="_blank" rel="external">基于canvas的图片转字符画工具</a></p>
+        <p>有时候我们会遇到图片垂直居中的情况，更准确来说应该是在一个元素内适配图片。而且这种垂直居中图片的高度也是不确定的，这就给页面布局带来了一定的挑战。</p>
+<h3 id="整体效果">整体效果</h3><hr>
+<p>首先，让我们先来看一下整体的效果：</p>
+<p><iframe src="http://s.codepen.io/wilsonup/debug/zGEwwJ?" width="100%" height="300px" frameborder="0"></iframe><a id="more"></a></p>
+<h3 id="完整代码">完整代码</h3><hr>
+<p>html<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"g-wrap"</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="title">img</span> <span class="attribute">src</span>=<span class="value">"http://www.wilsonup.xyz/img/toCode/yy.jpg"</span> <span class="attribute">alt</span>=<span class="value">""</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
+<p>css<br><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="class">.g-wrap</span> <span class="rules">&#123;</span><br><span class="line">  <span class="rule"><span class="attribute">display</span>:<span class="value"> table-cell</span></span>;</span><br><span class="line">  <span class="rule"><span class="attribute">width</span>:<span class="value"> <span class="number">250px</span></span></span>;</span><br><span class="line">  <span class="rule"><span class="attribute">height</span>:<span class="value"> <span class="number">250px</span></span></span>;</span><br><span class="line">  <span class="rule"><span class="attribute">text-align</span>:<span class="value"> center</span></span>;</span><br><span class="line">  <span class="rule"><span class="attribute">background-color</span>:<span class="value"> <span class="hexcolor">#ccc</span></span></span>;</span><br><span class="line">  <span class="rule"><span class="attribute">vertical-align</span>:<span class="value"> middle</span></span>;</span><br><span class="line">&#125;</span></span><br><span class="line"><span class="tag">img</span> <span class="rules">&#123;</span><br><span class="line">  <span class="rule"><span class="attribute">vertical-align</span>:<span class="value"> middle</span></span>;</span><br><span class="line">&#125;</span></span><br></pre></td></tr></table></figure></p>
+<h3 id="后续">后续</h3><hr>
+<p>当然，这不仅仅局限于图片，文本也是OK的。</p>
+<p><iframe src="http://s.codepen.io/wilsonup/debug/EjwmbO?" width="100%" height="300px" frameborder="0"></iframe><!--more--></p>
+<h3 id="说明">说明</h3><hr>
+<p>本实例在IE7+,chrome,FireFox测试通过。</p>
 
       
     </div>
@@ -123,10 +130,8 @@ document.getElementById("bdshell_js").src = "http://bdimg.share.baidu.com/static
 
  <nav id="pagination" >
     
-    <a href="/2015/06/19/vertical-center/" class="alignleft prev" >上一頁</a>
     
-    
-    <a href="/2015/05/29/3d-rotate/" class="alignright next" >下一頁</a>
+    <a href="/2015/06/01/to-code/" class="alignright next" >下一頁</a>
     
     <div class="clearfix"></div>
 </nav>
