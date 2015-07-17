@@ -73,6 +73,56 @@ var _hmt = _hmt || [];
     <header>
       
         <div class="icon"></div>
+        <time datetime="2015-07-17T02:22:59.000Z"><a href="/2015/07/17/add-svg/">2015-07-17</a></time>
+      
+      
+  
+    <h1 class="title"><a href="/2015/07/17/add-svg/">html引入svg</a></h1>
+  
+
+    </header>
+    <div class="entry">
+      
+        <h3 id="svg源码">svg源码</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="title">svg</span> <span class="attribute">xmlns</span>=<span class="value">"http://www.w3.org/2000/svg"</span> <span class="attribute">style</span>=<span class="value">"display: none;"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">symbol</span> <span class="attribute">id</span>=<span class="value">"mark"</span> <span class="attribute">viewBox</span>=<span class="value">"0 0 16 16"</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="title">title</span>&gt;</span>mark icon<span class="tag">&lt;/<span class="title">title</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="title">path</span> <span class="attribute">fill</span>=<span class="value">"#999"</span> <span class="attribute">d</span>=<span class="value">"M11.887 11.793c.08.295.382.47.676.39s.47-.382.39-.676l-2.213-8.26c-.08-.294-.382-.47-.676-.39s-.47.382-.39.676l2.213 8.26zm-3.333.555c.305 0 .552-.247.552-.552v-6.62c0-.306-.247-.553-.552-.553s-.552.247-.552.552v6.62c0 .305.247.553.552.553zm6.62-1.93c-.304 0-.55.246-.55.55v2.223c-.075.524-.304.744-.874.813H2.42c-.712-.05-.97-.274-1.04-.89V10.97c0-.306-.246-.553-.55-.553s-.553.247-.553.552v2.718c0 .77.64 1.42 1.41 1.42l12.727-.002c.724 0 1.31-.358 1.31-1.08V10.97c0-.306-.246-.553-.55-.553zM4.14 12.347c.305 0 .552-.247.552-.552V1.59c0-.306-.247-.553-.552-.553s-.552.247-.552.552v10.206c0 .304.247.552.552.552zm2.207 0c.305 0 .552-.247.552-.552V3.244c0-.305-.248-.552-.553-.552s-.552.247-.552.552v8.552c0 .304.247.552.552.552z"</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="title">symbol</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">symbol</span> <span class="attribute">id</span>=<span class="value">"caret"</span> <span class="attribute">viewBox</span>=<span class="value">"0 0 32 32"</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="title">title</span>&gt;</span>caret icon<span class="tag">&lt;/<span class="title">title</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="title">path</span> <span class="attribute">fill</span>=<span class="value">"#999"</span> <span class="attribute">d</span>=<span class="value">"M16 19.146l7.79-7.557 1.04 1.007L16 21.16l-8.83-8.563 1.04-1.008L16 19.145z"</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="title">symbol</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="title">svg</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>关于viewBox,可以参考下<a href="http://my.oschina.net/710409599/blog/307658" target="_blank" rel="external">这篇文章</a>，这里就不多废话了。</p>
+</blockquote>
+<h3 id="html中引入">html中引入</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="title">svg</span> <span class="attribute">class</span>=<span class="value">"ui-icon"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">use</span> <span class="attribute">xmlns:xlink</span>=<span class="value">"http://www.w3.org/1999/xlink"</span> <span class="attribute">xlink:href</span>=<span class="value">"svg路径#mark"</span>&gt;</span><span class="tag">&lt;/<span class="title">use</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="title">svg</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>svg后面#的内容就是<code>symbol id</code>，代表着你要引入哪个图标</p>
+
+      
+    </div>
+    <footer>
+      
+        
+        
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+
+
+  <article class="post">
+  
+    <div class="gallery">
+  <div class="photoset">
+    
+      <img src="">
+    
+  </div>
+  <div class="control">
+    <div class="prev"></div>
+    <div class="next"></div>
+  </div>
+</div>
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
         <time datetime="2015-07-02T06:00:23.000Z"><a href="/2015/07/02/js-and-css-lib/">2015-07-02</a></time>
       
       
