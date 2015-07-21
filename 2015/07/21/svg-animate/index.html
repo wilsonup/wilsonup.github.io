@@ -1,0 +1,237 @@
+
+
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?a05b1025c4dd1c28e237f53e244a112f";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+  
+  <title>两种常用的svg动画 | wilson&#39;s blog</title>
+  <meta name="author" content="wilson">
+  
+  <meta name="description" content="svg实现过度动画完整效果如下：
+html123456789101112131415161718192021222324&amp;lt;div id=&quot;button&quot;&amp;gt;    &amp;lt;svg viewBox=&quot;0 0 194 185&quot;&amp;gt;        &amp;lt;polygon fill=&quot;#ccc&quot; points=&quot;97.3,0 127.4,60.9 194.6,70.7 145.9,118.1 157.4,185.1 97.3,153.5 37.2,185.1 48.6,118.1 0,70.7 67.2,60.9&quot;&amp;gt;        &amp;lt;animate id=&quot;toCheck&quot; begin=&quot;indefinite&quot; attributeName=&quot;points&quot; dur=&quot;600ms&quot; fill=&quot;freeze&quot; to=&quot;110,58.2 147.3,0 192.1,29 141.7,105.1 118.7,139.8 88.8,185.1 46.1,156.5 0,125 23.5,86.6 71.1,116.7&quot;/&amp;gt;        &amp;lt;animate id=&quot;toStar&quot; begin=&quot;indefinite&quot; attributeName=&quot;points&quot; dur=&quot;600ms&quot; fill=&quot;freeze&quot; to=&quot;97.3,0 127.4,60.9 194.6,70.7 145.9,118.1 157.4,185.1 97.3,153.5 37.2,185.1 48.6,118.1 0,70.7 67.2,60.9&quot;/&amp;gt;        &amp;lt;animate            id = &quot;toGreen&quot;            begin = &quot;indefinite&quot;            attributeName = &quot;fill&quot;            dur = &quot;600ms&quot;            fill = &quot;freeze&quot;            to = &quot;#53B848&quot;          /&amp;gt;          &amp;lt;animate            id = &quot;toRed&quot;            begin = &quot;indefinite&quot;            attributeName = &quot;fill&quot;            dur = &quot;600ms&quot;            fill = &quot;freeze&quot;            to = &quot;#ccc&quot;          /&amp;gt;      &amp;lt;/polygon&amp;gt;    &amp;lt;/svg&amp;gt;&amp;lt;/div&amp;gt;
+&amp;lt;polygon&amp;gt;是先定义好图形的初始样式&amp;lt;animate&amp;gt;是定义要过渡到的图形样式，attributeName是定义想要产生变化的属性名
+
+小tips：Inkscape可以生成目标图形的svg路径代码">
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:title" content="两种常用的svg动画"/>
+  <meta property="og:site_name" content="wilson&#39;s blog"/>
+
+  
+    <meta property="og:image" content="undefined"/>
+  
+
+  <link href="/favicon.png" rel="icon" type="image/x-ico">
+  <link rel="alternate" href="/atom.xml" title="wilson&#39;s blog" type="application/atom+xml">
+  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  <script src="//libs.baidu.com/jquery/1.8.0/jquery.min.js"></script>
+</head>
+
+
+<body>
+  <header id="header" class="inner">
+<div class="alignleft">
+  <h1><a href="/">wilson&#39;s blog</a></h1>
+  <h2><a href="/">try my best</a></h2>
+</div>
+<nav id="main-nav" class="alignright">
+  <ul>
+    
+      <li><a href="/">首页</a></li>
+    
+      <li><a href="/archives">归档</a></li>
+    
+	<li> <a href="/atom.xml">RSS</a> </li>
+  </ul>
+  <div class="clearfix"></div>
+</nav>
+<div class="clearfix"></div></header>
+  <div id="content" class="inner">
+    <div id="main-col" class="alignleft"><div id="wrapper"><article class="post">
+  
+    <div class="gallery">
+  <div class="photoset">
+    
+      <img src="">
+    
+  </div>
+  <div class="control">
+    <div class="prev"></div>
+    <div class="next"></div>
+  </div>
+</div>
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time datetime="2015-07-21T12:02:37.000Z"><a href="/2015/07/21/svg-animate/">2015-07-21</a></time>
+      
+      
+  
+    <h1 class="title">两种常用的svg动画</h1>
+  
+
+    </header>
+    <div class="entry">
+      
+        <h3 id="svg实现过度动画">svg实现过度动画</h3><p>完整效果如下：</p>
+<p><iframe src="http://s.codepen.io/wilsonup/debug/vOzgBm?" frameborder="0" width="250" height="280"></iframe><br>html<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">id</span>=<span class="value">"button"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">svg</span> <span class="attribute">viewBox</span>=<span class="value">"0 0 194 185"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="title">polygon</span> <span class="attribute">fill</span>=<span class="value">"#ccc"</span> <span class="attribute">points</span>=<span class="value">"97.3,0 127.4,60.9 194.6,70.7 145.9,118.1 157.4,185.1 97.3,153.5 37.2,185.1 48.6,118.1 0,70.7 67.2,60.9"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="title">animate</span> <span class="attribute">id</span>=<span class="value">"toCheck"</span> <span class="attribute">begin</span>=<span class="value">"indefinite"</span> <span class="attribute">attributeName</span>=<span class="value">"points"</span> <span class="attribute">dur</span>=<span class="value">"600ms"</span> <span class="attribute">fill</span>=<span class="value">"freeze"</span> <span class="attribute">to</span>=<span class="value">"110,58.2 147.3,0 192.1,29 141.7,105.1 118.7,139.8 88.8,185.1 46.1,156.5 0,125 23.5,86.6 71.1,116.7"</span>/&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="title">animate</span> <span class="attribute">id</span>=<span class="value">"toStar"</span> <span class="attribute">begin</span>=<span class="value">"indefinite"</span> <span class="attribute">attributeName</span>=<span class="value">"points"</span> <span class="attribute">dur</span>=<span class="value">"600ms"</span> <span class="attribute">fill</span>=<span class="value">"freeze"</span> <span class="attribute">to</span>=<span class="value">"97.3,0 127.4,60.9 194.6,70.7 145.9,118.1 157.4,185.1 97.3,153.5 37.2,185.1 48.6,118.1 0,70.7 67.2,60.9"</span>/&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="title">animate</span></span><br><span class="line">            <span class="attribute">id</span> = "<span class="attribute">toGreen</span>"</span><br><span class="line">            <span class="attribute">begin</span> = "<span class="attribute">indefinite</span>"</span><br><span class="line">            <span class="attribute">attributeName</span> = "<span class="attribute">fill</span>"</span><br><span class="line">            <span class="attribute">dur</span> = "<span class="attribute">600ms</span>"</span><br><span class="line">            <span class="attribute">fill</span> = "<span class="attribute">freeze</span>"</span><br><span class="line">            <span class="attribute">to</span> = "#<span class="attribute">53B848</span>"</span><br><span class="line">          /&gt;</span></span><br><span class="line">          <span class="tag">&lt;<span class="title">animate</span></span><br><span class="line">            <span class="attribute">id</span> = "<span class="attribute">toRed</span>"</span><br><span class="line">            <span class="attribute">begin</span> = "<span class="attribute">indefinite</span>"</span><br><span class="line">            <span class="attribute">attributeName</span> = "<span class="attribute">fill</span>"</span><br><span class="line">            <span class="attribute">dur</span> = "<span class="attribute">600ms</span>"</span><br><span class="line">            <span class="attribute">fill</span> = "<span class="attribute">freeze</span>"</span><br><span class="line">            <span class="attribute">to</span> = "#<span class="attribute">ccc</span>"</span><br><span class="line">          /&gt;</span></span><br><span class="line">      <span class="tag">&lt;/<span class="title">polygon</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="title">svg</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
+<p><code>&lt;polygon&gt;</code>是先定义好图形的初始样式<br><code>&lt;animate&gt;</code>是定义要过渡到的图形样式，<code>attributeName</code>是定义想要产生变化的属性名</p>
+<blockquote>
+<p>小tips：Inkscape可以生成目标图形的svg路径代码<a id="more"></a></p>
+</blockquote>
+<p>js<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> tocheck = <span class="built_in">document</span>.getElementById(<span class="string">"toCheck"</span>),</span><br><span class="line">    togreen = <span class="built_in">document</span>.getElementById(<span class="string">"toGreen"</span>),</span><br><span class="line">    tostar = <span class="built_in">document</span>.getElementById(<span class="string">"toStar"</span>),</span><br><span class="line">    tored = <span class="built_in">document</span>.getElementById(<span class="string">"toRed"</span>);</span><br><span class="line">$(<span class="string">'#button'</span>).toggle(<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    tocheck.beginElement();</span><br><span class="line">    togreen.beginElement();</span><br><span class="line">&#125;,<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    tostar.beginElement();</span><br><span class="line">    tored.beginElement();</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure></p>
+<p>调用核心方法<code>beginElement()</code>即可启动动画的过渡。</p>
+<h3 id="svg实现过度动画-1">svg实现过度动画</h3><p>这个效果在很多H5页面可以运用到，效果如下：</p>
+<p><iframe src="http://s.codepen.io/wilsonup/debug/OVoWNZ?" frameborder="0" height="400"></iframe><br>html<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="title">svg</span> <span class="attribute">viewBox</span>=<span class="value">"100 100 557 482"</span> <span class="attribute">id</span>=<span class="value">"svgLine"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">path</span> <span class="attribute">stroke</span>=<span class="value">"#000"</span> <span class="attribute">stroke-width</span>=<span class="value">"1"</span> <span class="attribute">fill</span>=<span class="value">"none"</span> <span class="attribute">d</span>=<span class="value">"M 142.85714,160.93361 551.42857,166.6479 600,312.36218 468.57143,423.79075 l 105.71428,120 -5.71428,0"</span>/&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="title">svg</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
+<p>css<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">#svgLine &#123;</span><br><span class="line">    stroke-dasharray: 901;</span><br><span class="line">    stroke-dashoffset: 901;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">.active &#123;</span><br><span class="line">    #svgLine &#123;</span><br><span class="line">        animation: dash .8s linear 0s forwards 1;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">@keyframes dash &#123;</span><br><span class="line">    100% &#123;</span><br><span class="line">        stroke-dashoffset: 0;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p><code>stroke-dasharray</code>设置线条的间隔长度，<code>stroke-dashoffset</code>设置线条的偏移量,线条的长度可用<code>getTotalLength()</code>获取到</p>
+
+      
+    </div>
+    <footer>
+      
+        
+        
+<!-- Baidu Button BEGIN -->
+<div id="bdshare" class="bdshare_t bds_tools_32 get-codes-bdshare">
+<a class="bds_qzone"></a>
+<a class="bds_tsina"></a>
+<a class="bds_tqq"></a>
+<a class="bds_renren"></a>
+<a class="bds_t163"></a>
+<span class="bds_more"></span>
+<a class="shareCount"></a>
+</div>
+<script type="text/javascript" id="bdshare_js" data="type=tools&amp;uid=3326447" ></script>
+<script type="text/javascript" id="bdshell_js"></script>
+<script type="text/javascript">
+document.getElementById("bdshell_js").src = "http://bdimg.share.baidu.com/static/js/shell_v2.js?cdnversion=" + Math.ceil(new Date()/3600000)
+</script>
+<!-- Baidu Button END -->      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+
+ <nav id="pagination" >
+    
+    
+    <a href="/2015/07/17/share/" class="alignright next" >下一頁</a>
+    
+    <div class="clearfix"></div>
+</nav>
+
+
+
+<!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="111" data-title="请替换成文章的标题" data-url="请替换成文章的网址"></div>
+<!-- 多说评论框 end -->
+<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+<script type="text/javascript">
+var duoshuoQuery = {short_name:"wilsonup"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+<!-- 多说公共JS代码 end -->
+
+  
+</section>
+
+</div></div>
+    <aside id="sidebar" class="alignright">
+  
+
+  <div class="widget tag">
+<h3 class="title">简介</h3>
+<ul class="entry">
+<li>本体：吴伟栓</li>
+<li>二次元：wilson | moxie</li>
+<li>现状：欢聚时代前端工程师</li>
+<li>QQ 号：465559043</li>
+</ul>
+</div>
+
+
+
+  <iframe width="100%" height="550" class="share_self"  frameborder="0" scrolling="no" src="http://widget.weibo.com/weiboshow/index.php?language=&width=0&height=550&fansRow=1&ptype=1&speed=0&skin=1&isTitle=1&noborder=1&isWeibo=1&isFans=1&uid=2831721231&verifier=c0b433d1&dpc=1"></iframe>
+</aside>
+    <div class="clearfix"></div>
+  </div>
+  <footer id="footer" class="inner"><section>
+Theme of <a href="https://github.com/zippera/lightum">Lightum</a>
+</section>
+<div class="clearfix"></div>
+</footer>
+  <script src="//libs.baidu.com/jquery/2.0.3/jquery.min.js"></script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+(function($){
+  $('.fancybox').fancybox();
+})(jQuery);
+</script>
+
+
+<!-- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+</body>
+</html>
+
+
