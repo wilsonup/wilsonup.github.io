@@ -1,0 +1,95 @@
+{
+    "itemlist": [
+        {
+            "video_url": "http://v1.dwstatic.com/shortvideo/02/20156/027/3ad78f07e5b98e55ba274d6e4e6e0000.mp4", 
+            "sNickName": "请叫我王小瑞i", 
+            "sBrief": "啦啦啦。 美女姐姐", 
+            "sIconUrl": "http://m1.dwstatic.com/picmbox/mboxMomPic/01/20155/017/120_120_x0a152825d56c575509b6720773070000.jpg?w=300&h=300", 
+            "iFavorCnt": 216, 
+            "iComentCnt": 147, 
+            "img_href_url": "http://kuaikan.duowan.com/video/6165069339927357019", 
+            "sIcon_href_url": "http://kuaikan.duowan.com/video/6165069339927357019", 
+            "img_url": "http://v1.dwstatic.com/shortvideo/01/20156/027/300_height_3ad78f07e5b98e55ba274d6e4e6e0000.jpg?w=300&h=400", 
+            "width": "300", 
+            "heigth": "400"
+        }, 
+        {
+            "video_url": "http://v1.dwstatic.com/shortvideo/02/20157/003/3ad78f077d1e9655ba270b710c710000.mp4", 
+            "sNickName": "吾乃天神桐丶", 
+            "sBrief": "搞笑", 
+            "sIconUrl": "http://m1.dwstatic.com/huodong/shouji3/286/14/120_120_1cbccb0f44b434473fd6eb363c60370a.jpg", 
+            "iFavorCnt": 648, 
+            "iComentCnt": 127, 
+            "img_href_url": "http://kuaikan.duowan.com/video/6167150269428926874", 
+            "sIcon_href_url": "http://kuaikan.duowan.com/video/6167150269428926874", 
+            "img_url": "http://v1.dwstatic.com/shortvideo/01/20157/003/300_height_3ad78f077d1e9655ba270b710c710000.jpg?w=300&h=400", 
+            "width": "300", 
+            "heigth": "400"
+        }, 
+        {
+            "video_url": "http://v1.dwstatic.com/shortvideo/02/20156/027/3ad78f07aebe8e55bc275d705e700000.mp4", 
+            "sNickName": "秋至末-", 
+            "sBrief": "大魔王附体的火影", 
+            "sIconUrl": "http://m1.dwstatic.com/huodong/shouji3/201411/978/85/120_120_xb90d3046019e3c81f02e613208107d5f.jpg", 
+            "iFavorCnt": 463, 
+            "iComentCnt": 525, 
+            "img_href_url": "http://kuaikan.duowan.com/video/6165074609831927457", 
+            "sIcon_href_url": "http://kuaikan.duowan.com/video/6165074609831927457", 
+            "img_url": "http://v1.dwstatic.com/shortvideo/01/20156/027/300_height_3ad78f07aebe8e55bc275d705e700000.jpg?w=300&h=532", 
+            "width": "300", 
+            "heigth": "532"
+        }, 
+        {
+            "video_url": "http://v1.dwstatic.com/shortvideo/02/20156/027/3ad78f0744bf8e55b927977098700000.mp4", 
+            "sNickName": "浪友与酒", 
+            "sBrief": "你们都好看", 
+            "sIconUrl": "http://m1.dwstatic.com/picmbox/mboxMomPic/01/20157/002/120_120_x0a152973eb1294557b5b21b322b30000.jpg", 
+            "iFavorCnt": 154, 
+            "iComentCnt": 256, 
+            "img_href_url": "http://kuaikan.duowan.com/video/6165075236707996689", 
+            "sIcon_href_url": "http://kuaikan.duowan.com/video/6165075236707996689", 
+            "img_url": "http://v1.dwstatic.com/shortvideo/01/20156/027/300_height_3ad78f0744bf8e55b927977098700000.jpg?w=300&h=400", 
+            "width": "300", 
+            "heigth": "400"
+        }, 
+        {
+            "video_url": "http://v1.dwstatic.com/shortvideo/02/20156/027/3ad78f07a0c08e55ba272b712c710000.mp4", 
+            "sNickName": "凌峰", 
+            "sBrief": "第一次", 
+            "sIconUrl": "http://m1.dwstatic.com/picmbox/mboxMomPic/01/20155/013/120_120_x0a152973bb245255775b352a362a0000.jpg?w=413&h=413", 
+            "iFavorCnt": 17, 
+            "iComentCnt": 28, 
+            "img_href_url": "http://kuaikan.duowan.com/video/6165076753711518541", 
+            "sIcon_href_url": "http://kuaikan.duowan.com/video/6165076753711518541", 
+            "img_url": "http://v1.dwstatic.com/shortvideo/01/20156/027/300_height_3ad78f07a0c08e55ba272b712c710000.jpg?w=300&h=300", 
+            "width": "300", 
+            "heigth": "300"
+        }, 
+        {
+            "video_url": "http://v1.dwstatic.com/shortvideo/02/20157/003/3ad78f07dc219655b127437244720000.mp4", 
+            "sNickName": "✎﹏兮x﹍", 
+            "sBrief": "为什么我腿上 手上…", 
+            "sIconUrl": "http://m1.dwstatic.com/picmbox/mboxMomPic/01/20157/006/120_120_x0a152973b01e9a557b5b4bba4cba0000.jpg", 
+            "iFavorCnt": 220, 
+            "iComentCnt": 589, 
+            "img_href_url": "http://kuaikan.duowan.com/video/6167153979355831542", 
+            "sIcon_href_url": "http://kuaikan.duowan.com/video/6167153979355831542", 
+            "img_url": "http://v1.dwstatic.com/shortvideo/01/20157/003/300_height_3ad78f07dc219655b127437244720000.jpg?w=300&h=400", 
+            "width": "300", 
+            "heigth": "400"
+        }, 
+        {
+            "video_url": "http://v1.dwstatic.com/shortvideo/02/20156/027/3ad78f0d28c68e55285c7fac80ac0000.mp4", 
+            "sNickName": "Sa妞 _", 
+            "sBrief": "到底念啥？", 
+            "sIconUrl": "http://m1.dwstatic.com/picmbox/mboxMomPic/01/20156/026/120_120_x0a152973dc1b8d55855bcf0dd00d0000.jpg?w=413&h=413", 
+            "iFavorCnt": 44, 
+            "iComentCnt": 23, 
+            "img_href_url": "http://kuaikan.duowan.com/video/6165082822445337378", 
+            "sIcon_href_url": "http://kuaikan.duowan.com/video/6165082822445337378", 
+            "img_url": "http://v1.dwstatic.com/shortvideo/01/20156/027/300_height_3ad78f0d28c68e55285c7fac80ac0000.jpg?w=300&h=300", 
+            "width": "300", 
+            "heigth": "300"
+        }
+    ]
+}
