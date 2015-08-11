@@ -73,6 +73,52 @@ var _hmt = _hmt || [];
     <header>
       
         <div class="icon"></div>
+        <time datetime="2015-08-03T13:40:46.000Z"><a href="/2015/08/03/kuaikan-question/">2015-08-03</a></time>
+      
+      
+  
+    <h1 class="title"><a href="/2015/08/03/kuaikan-question/">细数做“快看”的坑</a></h1>
+  
+
+    </header>
+    <div class="entry">
+      
+        <p>最近做了个视频分享类的移动需求—<a href="http://webpd.mbox.duowan.com/index.php?r=videoshare/list&amp;monid=6173865699969314528" target="_blank" rel="external">快看小视频</a>（请在移动设备或者浏览器模拟中打开），虽然界面简洁，数据交互也不会复杂，但是还是遇到了很多的问题，这里记录遇到的坑还有一些知识点。</p>
+<h4 id="前方有料">前方有料</h4><p>1.单图分享时有这样的要求：横图宽要小于170px,竖图高小于170px,方图宽高都小于170px，并且所有都要按照比例缩放。<br>不BB，先上图：<br><img src="/img/kuaikan/single.png" alt=""><br>红色框是一个170x170的div，图片必须按照上面的规则在这个区域内完美显示。在动手之前，以为要用JS去设置宽高或者严格控制后台输出图片符合上面的规则（呵呵，基本不可能），但是结果却简单的一塌糊涂，仅需以下两行代码。<br><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">img</span> <span class="rules">&#123;</span><br><span class="line">    <span class="rule"><span class="attribute">max-height</span>:<span class="value"> <span class="number">170px</span></span></span>;</span><br><span class="line">    <span class="rule"><span class="attribute">max-width</span>:<span class="value"> <span class="number">170px</span></span></span>;</span><br><span class="line">&#125;</span></span><br></pre></td></tr></table></figure></p>
+
+      
+    </div>
+    <footer>
+      
+        
+        
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+
+
+  <article class="post">
+  
+    <div class="gallery">
+  <div class="photoset">
+    
+      <img src="">
+    
+  </div>
+  <div class="control">
+    <div class="prev"></div>
+    <div class="next"></div>
+  </div>
+</div>
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
         <time datetime="2015-07-21T12:02:37.000Z"><a href="/2015/07/21/svg-animate/">2015-07-21</a></time>
       
       
